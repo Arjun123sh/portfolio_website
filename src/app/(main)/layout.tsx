@@ -11,9 +11,9 @@ import { Navbar } from "@/components/navbar"
 import { Footer } from "@/components/footer"
 
 export const metadata: Metadata = {
-  title: "5fox - IT Services & Solutions",
+  title: "Arjun Sharma - MERN & Next.js Developer",
   description:
-    "Transform your business with innovative IT solutions. Web development, mobile apps, cloud services, cybersecurity, and more.",
+    "Portfolio of Arjun Sharma — a MERN stack and Next.js developer passionate about building modern, scalable web applications. Explore my projects, skills, and experience.",
     icons: {
     icon: '/5Fox.jpg',
     shortcut: '/5Fox.jpg',
