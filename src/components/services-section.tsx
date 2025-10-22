@@ -3,55 +3,52 @@
 import { motion } from "framer-motion"
 import { useInView } from "framer-motion"
 import { useRef } from "react"
-import { Code, Shield, Cloud, Smartphone, Database, Cog, ArrowRight, CheckCircle } from "lucide-react"
+import { Code, Shield, Cloud, Smartphone, Database, Cog, ArrowRight, CheckCircle,Zap,Layers,Globe } from "lucide-react"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 
 const services = [
   {
     icon: Code,
-    title: "Web Development",
-    description: "Custom web applications built with modern frameworks and best practices.",
-    features: ["React & Next.js", "Full-Stack Solutions", "API Development", "Performance Optimization"],
+    title: "Full-Stack Web Development",
+    description:
+      "Building responsive, performant, and scalable web applications using modern frameworks and clean architecture.",
+    features: ["React & Next.js", "Spring Boot & Node.js", "REST APIs", "TypeScript"],
     color: "from-blue-500 to-cyan-500",
   },
   {
-    icon: Smartphone,
-    title: "Mobile Development",
-    description: "Native and cross-platform mobile apps for iOS and Android.",
-    features: ["React Native", "Flutter", "Native iOS/Android", "App Store Deployment"],
+    icon: Zap,
+    title: "Real-Time Application Development",
+    description:
+      "Creating seamless real-time features like chat, video calling, and live tracking using modern tools.",
+    features: ["Supabase Channels", "WebRTC", "Firebase Realtime DB", "Google Maps API"],
     color: "from-green-500 to-emerald-500",
   },
-  // {
-  //   icon: Cloud,
-  //   title: "Cloud Solutions",
-  //   description: "Scalable cloud infrastructure and migration services.",
-  //   features: ["AWS & Azure", "DevOps & CI/CD", "Microservices", "Container Orchestration"],
-  //   color: "from-purple-500 to-violet-500",
-  // },
-  // {
-  //   icon: Shield,
-  //   title: "Cybersecurity",
-  //   description: "Comprehensive security solutions to protect your digital assets.",
-  //   features: ["Security Audits", "Penetration Testing", "Compliance", "24/7 Monitoring"],
-  //   color: "from-red-500 to-orange-500",
-  // },
   {
     icon: Database,
-    title: "Data Analytics",
-    description: "Transform your data into actionable business insights.",
-    features: ["Big Data Processing", "Machine Learning", "Business Intelligence", "Data Visualization"],
+    title: "Backend & Data Integration",
+    description:
+      "Designing efficient database structures and backend systems for performance and scalability.",
+    features: ["PostgreSQL & MS SQL", "Prisma ORM", "Firebase & Supabase", "Optimized Data Flows"],
     color: "from-indigo-500 to-blue-500",
   },
-  // {
-  //   icon: Cog,
-  //   title: "IT Consulting",
-  //   description: "Strategic technology consulting to optimize your IT infrastructure.",
-  //   features: ["Digital Transformation", "Technology Strategy", "Process Optimization", "Training & Support"],
-  //   color: "from-orange-500 to-red-500",
-  // },
+  {
+    icon: Layers,
+    title: "Modern UI Engineering",
+    description:
+      "Developing clean, intuitive, and responsive user interfaces that enhance user engagement.",
+    features: ["Material UI", "Tailwind CSS", "Responsive Design", "Component Reusability"],
+    color: "from-purple-500 to-violet-500",
+  },
+  {
+    icon: Globe,
+    title: "End-to-End Project Delivery",
+    description:
+      "Taking projects from idea to deployment — ensuring maintainability, scalability, and performance.",
+    features: ["Architecture Planning", "Integration & Testing", "Deployment", "Version Control (Git)"],
+    color: "from-orange-500 to-red-500",
+  },
 ]
-
 export function ServicesSection() {
   const ref = useRef(null)
   const isInView = useInView(ref, { once: true, margin: "-100px" })

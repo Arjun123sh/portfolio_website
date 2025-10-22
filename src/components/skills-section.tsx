@@ -42,7 +42,7 @@ import {
 const skillCategories = [
   {
     title: "Frontend Development",
-    description: "Modern web interfaces & user experiences",
+    description: "Modern and responsive web interfaces with clean UI/UX",
     icon: Code2,
     skills: [
       { name: "React.js", icon: SiReact, lightColor: "#61DAFB", darkColor: "#61DAFB" },
@@ -55,12 +55,11 @@ const skillCategories = [
   },
   {
     title: "Backend Development",
-    description: "Robust server-side solutions & APIs",
+    description: "APIs and server-side solutions with a focus on scalability",
     icon: Server,
     skills: [
       { name: "Node.js", icon: SiNodedotjs, lightColor: "#339933", darkColor: "#339933" },
       { name: "Express.js", icon: SiExpress, lightColor: "#000000", darkColor: "#FFFFFF" },
-      { name: "Django", icon: SiDjango, lightColor: "#092E20", darkColor: "#0C4B33" },
       { name: "PostgreSQL", icon: SiPostgresql, lightColor: "#336791", darkColor: "#336791" },
       { name: "MongoDB", icon: SiMongodb, lightColor: "#47A248", darkColor: "#47A248" },
       { name: "Firebase", icon: SiFirebase, lightColor: "#FFCA28", darkColor: "#FFCA28" },
@@ -70,28 +69,13 @@ const skillCategories = [
   },
   {
     title: "Mobile Development",
-    description: "Cross-platform & native mobile apps",
+    description: "Cross-platform apps with React Native and Flutter",
     icon: Smartphone,
     skills: [
       { name: "React Native", icon: SiReact, lightColor: "#61DAFB", darkColor: "#61DAFB" },
-      { name: "Flutter", icon: SiFlutter, lightColor: "#02569B", darkColor: "#02569B" },
-      { name: "Kotlin", icon: SiKotlin, lightColor: "#7F52FF", darkColor: "#7F52FF" },
-      { name: "Swift", icon: SiSwift, lightColor: "#FA7343", darkColor: "#FA7343" },
-    ],
-  },
-  {
-    title: "Data & Analytics",
-    description: "Data visualization & business intelligence",
-    icon: BarChart3,
-    skills: [
-      { name: "Python", icon: SiPython, lightColor: "#3776AB", darkColor: "#3776AB" },
-      { name: "SQL", icon: SiMysql, lightColor: "#4479A1", darkColor: "#4479A1" },
-      { name: "Power BI", icon: SiPowers, lightColor: "#F2C811", darkColor: "#F2C811" },
-      { name: "Tableau", icon: SiTableau, lightColor: "#E97627", darkColor: "#E97627" },
     ],
   },
 ]
-
 export function SkillsSection() {
   const ref = useRef(null)
   const isInView = useInView(ref, { once: true, margin: "-100px" })
