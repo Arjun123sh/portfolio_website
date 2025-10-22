@@ -45,22 +45,7 @@ const contactFormSchema = z.object({
 
 type ContactFormData = z.infer<typeof contactFormSchema>
 
-const contactInfo = [
-  {
-    icon: Mail,
-    title: "Email Us",
-    description: "Get in touch via email", 
-    value: "5foxdevelopers@gmail.com",
-    link: "mailto:5foxdevelopers@gmail.com",
-  },
-  {
-    icon: Phone,
-    title: "Call Us",
-    description: "Speak with our team",
-    value: "+91 84375 16789", 
-    link: "tel:+918437516789",
-  },
-]
+
 
 const contactMethods = [
   { value: "email", label: "Email" },
@@ -534,46 +519,7 @@ export function ContactSection() {
             </Card>
           </motion.div>
 
-          {/* Contact Info - Same as before */}
-          <motion.div
-            initial={{ opacity: 0, x: 50 }}
-            animate={isInView ? { opacity: 1, x: 0 } : {}}
-            transition={{ duration: 0.8, delay: 0.2 }}
-            className="space-y-8"
-          >
-            <div className="space-y-6">
-              {contactInfo.map((info, index) => (
-                <motion.div
-                  key={info.title}
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={isInView ? { opacity: 1, y: 0 } : {}}
-                  transition={{ delay: 0.3 + index * 0.1, duration: 0.6 }}
-                  whileHover={{ scale: 1.02 }}
-                >
-                  <Card className="bg-card/50 backdrop-blur-sm border-border/50 hover:border-primary/20 transition-all duration-300">
-                    <CardContent className="p-6">
-                      <div className="flex items-start space-x-4">
-                        <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
-                          <info.icon className="w-6 h-6 text-primary" />
-                        </div>
-                        <div className="space-y-1">
-                          <h3 className="font-semibold text-foreground">{info.title}</h3>
-                          <p className="text-sm text-muted-foreground">{info.description}</p>
-                          <a
-                            href={info.link}
-                            className="text-sm text-primary hover:text-primary/80 transition-colors font-medium inline-flex items-center gap-1"
-                            aria-label={`${info.title}: ${info.value}`}
-                          >
-                            {info.value}
-                          </a>
-                        </div>
-                      </div>
-                    </CardContent>
-                  </Card>
-                </motion.div>
-              ))}
-            </div>
-          </motion.div>
+
         </div>
       </div>
     </section>

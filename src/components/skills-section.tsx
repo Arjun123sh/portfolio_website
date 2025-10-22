@@ -11,6 +11,7 @@ import {
   BarChart3,
   Server,
   Layers,
+  BookOpen,
   Globe,
 } from "lucide-react"
 
@@ -24,21 +25,16 @@ import {
   SiMui,
   SiNodedotjs,
   SiExpress,
-  SiDjango,
   SiPostgresql,
   SiMongodb,
   SiFirebase,
   SiSupabase,
   SiPrisma,
-  SiFlutter,
-  SiKotlin,
-  SiSwift,
-  SiPython,
+  SiLeetcode,
+  SiCplusplus,
   SiMysql,
-  SiPowers,
-  SiTableau,
-} from "react-icons/si"
-
+  SiCisco,
+} from "react-icons/si";
 const skillCategories = [
   {
     title: "Frontend Development",
@@ -69,13 +65,26 @@ const skillCategories = [
   },
   {
     title: "Mobile Development",
-    description: "Cross-platform apps with React Native and Flutter",
+    description: "Cross-platform apps with React Native",
     icon: Smartphone,
     skills: [
       { name: "React Native", icon: SiReact, lightColor: "#61DAFB", darkColor: "#61DAFB" },
     ],
   },
-]
+  {
+    title: "Core Subjects",
+    description: "Strong understanding of computer science fundamentals",
+    icon: BookOpen, 
+    skills: [
+      { name: "Data Structures & Algorithms (DSA)", icon: SiLeetcode, lightColor: "#FFA116", darkColor: "#FFA116" },
+      { name: "Object Oriented Programming (OOPs)", icon: SiCplusplus, lightColor: "#00599C", darkColor: "#00599C" },
+      { name: "Database Management Systems (RDBMS)", icon: SiMysql, lightColor: "#4479A1", darkColor: "#4479A1" },
+      { name: "Computer Networks (CN)", icon: SiCisco, lightColor: "#1BA0D7", darkColor: "#1BA0D7" },
+    ],
+  },
+];
+
+
 export function SkillsSection() {
   const ref = useRef(null)
   const isInView = useInView(ref, { once: true, margin: "-100px" })

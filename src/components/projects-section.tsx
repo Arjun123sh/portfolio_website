@@ -27,12 +27,16 @@ const categories = [
   "All",
   "Web Development", 
   "App Development", 
+  "Generative AI",
+  "Dashboards",
+  "Real-Time Apps",
+  "EdTech"
 ]
 
 export function ProjectsSection() {
   const ref = useRef(null)
   const isInView = useInView(ref, { once: true, margin: "-100px" })
-  const [activeCategory, setActiveCategory] = useState("All")
+  const [activeCategory, setActiveCategory] = useState("Web Development")
   const [showAll, setShowAll] = useState(false)
   const [projects, setProjects] = useState<Project[]>([])
   const [loading, setLoading] = useState(true)
@@ -54,7 +58,7 @@ export function ProjectsSection() {
       } catch (error) {
         console.error('Error loading projects:', error)
         // Fallback to default projects if Firebase fails
-        setProjects(defaultProjects)
+       
       } finally {
         setLoading(false)
       }
@@ -66,7 +70,7 @@ export function ProjectsSection() {
   const filteredProjects =
     activeCategory === "All" ? projects : projects.filter((project) => project.category === activeCategory)
   
-  const displayedProjects = showAll ? filteredProjects : filteredProjects.slice(0, 6)
+  const displayedProjects = filteredProjects
   const hasMoreProjects = filteredProjects.length > 6
 
   
