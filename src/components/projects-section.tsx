@@ -24,12 +24,9 @@ interface Project {
 }
 
 const categories = [
+  "All",
   "Web Development", 
   "App Development", 
-  "Android Development", 
-  "iOS Development", 
-  "Data Analytics", 
-  "Aritificial Intelligence",
 ]
 
 export function ProjectsSection() {
@@ -72,93 +69,7 @@ export function ProjectsSection() {
   const displayedProjects = showAll ? filteredProjects : filteredProjects.slice(0, 6)
   const hasMoreProjects = filteredProjects.length > 6
 
-  // Default projects for fallback
-  const defaultProjects: Project[] = [
-    {
-      id: "1",
-      title: "E-Commerce Platform",
-      description: "A modern, scalable e-commerce solution with advanced analytics and AI-powered recommendations.",
-      tags: ["React", "Node.js", "PostgreSQL", "AWS"],
-      category: "Web Development",
-      link: "https://example-ecommerce.com",
-      github: "#",
-      isCompleted: true,
-      isOngoing: false,
-      createdAt: new Date(),
-    },
-    {
-      id: "2",
-      title: "Healthcare Management System",
-      description: "Comprehensive healthcare platform with patient management, appointment scheduling, and telemedicine features.",
-      tags: ["Next.js", "TypeScript", "MongoDB", "WebRTC"],
-      category: "Healthcare",
-      link: "",
-      github: "#",
-      isCompleted: false,
-      isOngoing: true,
-      createdAt: new Date(),
-    },
-    {
-      id: "3",
-      title: "Financial Analytics Dashboard",
-      description: "Real-time financial data visualization and analytics platform for investment firms.",
-      tags: ["Vue.js", "Python", "D3.js", "Redis"],
-      category: "FinTech",
-      link: "https://example-fintech.com",
-      github: "#",
-      isCompleted: true,
-      isOngoing: false,
-      createdAt: new Date(),
-    },
-    {
-      id: "4",
-      title: "IoT Monitoring System",
-      description: "Industrial IoT platform for real-time monitoring and predictive maintenance of manufacturing equipment.",
-      tags: ["React", "Python", "InfluxDB", "Docker"],
-      category: "IoT",
-      link: "",
-      github: "#",
-      isCompleted: false,
-      isOngoing: true,
-      createdAt: new Date(),
-    },
-    {
-      id: "5",
-      title: "Learning Management System",
-      description: "Interactive online learning platform with video streaming, assessments, and progress tracking.",
-      tags: ["Next.js", "Node.js", "PostgreSQL", "AWS S3"],
-      category: "Education",
-      link: "https://example-lms.com",
-      github: "#",
-      isCompleted: true,
-      isOngoing: false,
-      createdAt: new Date(),
-    },
-    {
-      id: "6",
-      title: "Supply Chain Tracker",
-      description: "Blockchain-based supply chain tracking system for transparency and authenticity verification.",
-      tags: ["React", "Solidity", "Web3", "IPFS"],
-      category: "Blockchain",
-      link: "",
-      github: "#",
-      isCompleted: false,
-      isOngoing: true,
-      createdAt: new Date(),
-    },
-    {
-      id: "7",
-      title: "AI Content Generator",
-      description: "Advanced AI-powered content generation platform with natural language processing and machine learning capabilities.",
-      tags: ["Python", "TensorFlow", "React", "FastAPI"],
-      category: "AI/ML",
-      link: "https://example-ai.com",
-      github: "#",
-      isCompleted: true,
-      isOngoing: false,
-      createdAt: new Date(),
-    }
-  ]
+  
 
   return (
     <section id="projects" className="py-24" ref={ref}>
