@@ -26,22 +26,24 @@ export function HeroSection() {
             className="inline-flex items-center px-4 py-2 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-medium"
           >
             <Zap className="w-4 h-4 mr-2" />
-            5fox IT Services
+                        Arjun Sharma • Full-Stack Developer
+
           </motion.div>
 
           {/* Main Heading */}
-          <motion.h1
+                   <motion.h1
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.4, duration: 0.8 }}
             className="text-4xl md:text-6xl lg:text-7xl font-bold text-balance"
           >
-            IT Solutions for{" "}
+            Building{" "}
             <span className="text-primary bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-              Modern Business
+              Scalable Web Experiences
             </span>
           </motion.h1>
 
+          {/* Subtitle */}
           {/* Subtitle */}
           <motion.p
             initial={{ opacity: 0, y: 30 }}
@@ -49,10 +51,9 @@ export function HeroSection() {
             transition={{ delay: 0.6, duration: 0.8 }}
             className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto text-pretty leading-relaxed"
           >
-            Empower your organization with cutting-edge technology solutions. We deliver secure, scalable, and
-            innovative IT services that drive growth and transform your digital landscape.
+  I'm a Full-Stack Developer specializing in React, Next.js, Spring Boot, and modern web technologies , craft responsive UIs and build efficient backend systems that power real-time applications, 
+            seamless user experiences, and scalable digital platforms.
           </motion.p>
-
           {/* CTA Buttons */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}

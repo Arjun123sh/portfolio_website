@@ -81,24 +81,23 @@ export function IntroSection() {
             <motion.div variants={itemVariants} className="space-y-6">
               <Badge variant="outline" className="border-primary/20 text-primary bg-primary/5">
                 <span className="w-2 h-2 bg-primary rounded-full mr-2 animate-pulse"></span>
-                About 5fox
+                About Me
               </Badge>
-
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-balance leading-tight">
-                Transforming Businesses Through{" "}
-                <span className="text-primary">Innovation</span>
+                Passionate About{" "}
+                <span className="text-primary">Building Scalable Web Experiences</span>
               </h2>
 
               <div className="space-y-4">
                 <p className="text-lg text-muted-foreground leading-relaxed">
-                  At 5fox, we're passionate about leveraging cutting-edge technology to solve complex business challenges.
-                  With over a decade of experience, we've helped hundreds of companies streamline their operations,
-                  enhance security, and accelerate growth through innovative IT solutions.
+                  I’m a Full-Stack Developer with hands-on experience in React, Next.js, Spring Boot, and modern 
+                  web technologies. I've built multiple end-to-end applications, including real-time systems, 
+                  dashboards, and platform solutions.
                 </p>
 
                 <p className="text-lg text-muted-foreground leading-relaxed">
-                  Our team of expert developers, security specialists, and IT consultants work collaboratively to deliver
-                  tailored solutions that not only meet your current needs but also position your business for future success.
+                  From creating responsive frontends to integrating complex backend services and real-time 
+                  features, I focus on delivering clean, scalable, and impactful digital experiences.
                 </p>
               </div>
 
