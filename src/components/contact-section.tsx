@@ -230,26 +230,9 @@ export function ContactSection() {
   }
 
   return (
-    <section id="contact" className="py-24 bg-muted/30" ref={ref}>
+    <section id="contact" className="py-12 bg-muted/30" ref={ref}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Header */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={isInView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.8 }}
-          className="text-center space-y-4 mb-16"
-        >
-          <div className="inline-flex items-center px-3 py-1 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-medium">
-            Get In Touch
-          </div>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-balance">
-            Ready to Start Your <span className="text-primary">Project?</span>
-          </h2>
-          <p className="text-lg text-muted-foreground max-w-3xl mx-auto text-pretty leading-relaxed">
-            Let's discuss how we can help transform your business with innovative IT solutions. Our team is ready to
-            bring your vision to life.
-          </p>
-        </motion.div>
+        
 
         <div className="grid lg:grid-cols-3 gap-12">
           {/* Enhanced Contact Form */}

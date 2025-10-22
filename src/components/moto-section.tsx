@@ -148,37 +148,7 @@ export function MottoSection() {
             })}
           </motion.div>
 
-          {/* CTA */}
-          <motion.div variants={itemVariants} className="pt-12">
-            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-              <MotionButton
-                size="lg" 
-                className="px-8 py-4 text-lg font-semibold group"
-                whileHover={{ scale: 1 }}
-                whileTap={{ scale: 0.95 }}
-                onClick={() => window.location.href = '/contact-us'}
-              >
-                Start Your Journey
-                <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform duration-300" />
-              </MotionButton>
-              
-              <MotionButton
-                variant="outline" 
-                size="lg" 
-                className="px-8 py-4 text-lg font-semibold hover:bg-primary/5 hover:border-primary/30"
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                onClick={() => window.location.href = '/projects'}
-              >
-                Explore Our Work
-              </MotionButton>
-            </div>
-            
-            <p className="text-sm text-muted-foreground mt-6">
-              Join 500+ companies that trust 5fox to power their digital transformation
-            </p>
-          </motion.div>
-        </motion.div>
+
       </div>
     </section>
   )

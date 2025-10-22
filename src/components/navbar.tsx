@@ -15,7 +15,6 @@ const navItems = [
   // { name: "Team", href: "/" }, 
   { name: "Projects", href: "/projects" },
   { name: "Contact", href: "/contact-us" },
-  { name: "Career", href: "/career" },
 ];
 
 export function Navbar() {
@@ -47,7 +46,7 @@ export function Navbar() {
             whileHover={{ scale: 1.05 }}
             className="flex items-center space-x-2"
           >
-            <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
+            {/* <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
               <Image
                 src="/5Fox.jpg"
                 alt="5fox logo"
@@ -56,7 +55,7 @@ export function Navbar() {
                 className="object-contain rounded-lg"
               />
             </div>
-            <span className="text-xl font-bold text-foreground">5fox</span>
+            <span className="text-xl font-bold text-foreground">5fox</span> */}
           </motion.div>
 
           {/* Desktop Navigation */}
