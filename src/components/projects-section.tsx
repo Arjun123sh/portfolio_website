@@ -335,10 +335,10 @@ export function ProjectsSection() {
             <CardContent className="p-0">
               <div className="space-y-3">
                 <h3 className="text-xl font-bold text-foreground">
-                  Ready to start your next project?
+                  Have a project idea you'd like to discuss?
                 </h3>
                 <p className="text-muted-foreground">
-                  Let's discuss how we can bring your ideas to life with our expertise and proven track record.
+                  I'm always excited to collaborate on innovative and impactful projects.
                 </p>
               </div>
             </CardContent>

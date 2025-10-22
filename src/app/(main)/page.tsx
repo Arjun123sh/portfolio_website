@@ -18,7 +18,7 @@ export default function HomePage() {
       <IntroSection />
       <ServicesSection />
       <SkillsSection />
-      <MottoSection/>
+      {/* <MottoSection/> */}
       <ProjectsSection />
       {/* <PricingPage/> */}
         <ContactSection />

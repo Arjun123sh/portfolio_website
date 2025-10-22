@@ -3,22 +3,21 @@
 import { motion } from "framer-motion"
 import { useInView } from "framer-motion"
 import { useRef } from "react"
-import { Users, Award, Clock, Target, ArrowRight, CheckCircle, Lightbulb, Shield } from "lucide-react"
+import { Users, Award, Clock, Target, ArrowRight, CheckCircle, Lightbulb, Shield,Code,Layers,Globe, Rocket} from "lucide-react"
 import { Card, CardContent } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 
 const stats = [
-  { icon: Users, value: "10+", label: "Team Members" },
-  { icon: Award, value: "20+", label: "Projects Completed" },
-  { icon: Clock, value: "24/7", label: "Support" },
-  { icon: Target, value: "99%", label: "Success Rate" },
+  { icon: Award, value: "6+", label: "Major Projects" },
+  { icon: Code, value: "10+", label: "Technologies" },
+  { icon: Layers, value: "2", label: "Internships" },
 ]
 
 const features = [
-  { icon: Shield, title: "Enterprise Security", desc: "Bank-grade security protocols" },
-  { icon: Lightbulb, title: "Innovation First", desc: "Cutting-edge technology solutions" },
-  { icon: CheckCircle, title: "Proven Results", desc: "Track record of successful projects" },
+  { icon: Code, title: "Full-Stack Development", desc: "Building responsive UIs and robust backends using React, Next.js, Spring Boot & Node.js." },
+  { icon: Globe, title: "Real-Time Applications", desc: "Integrated WebRTC, Supabase Channels, and Google Maps API for seamless live experiences." },
+  { icon: Rocket, title: "Scalable Architecture", desc: "Designed modular and efficient systems ensuring performance and future growth." },
 ]
 
 export function IntroSection() {

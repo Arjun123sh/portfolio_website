@@ -64,14 +64,14 @@ export function ServicesSection() {
           className="text-center space-y-4 mb-16"
         >
           <div className="inline-flex items-center px-3 py-1 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-medium">
-            Our Services
+            My Expertise
           </div>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-balance">
-            Comprehensive IT Solutions for <span className="text-primary">Every Need</span>
+            What I <span className="text-primary">Do Best</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto text-pretty leading-relaxed">
-            From web development to cybersecurity, we offer a full spectrum of IT services designed to accelerate your
-            business growth and digital transformation.
+            I specialize in building modern, scalable, and real-time web applications using a wide range of technologies —
+            from frontend to backend to deployment.
           </p>
         </motion.div>
 
