@@ -56,7 +56,8 @@ const categories = [
   "iOS Development", 
   "Data Analytics", 
   "Aritificial Intelligence",
-  "Generative AI"
+  "Generative AI",
+  "Frontend Development",
 ]
 
 export function ProjectsManagement() {

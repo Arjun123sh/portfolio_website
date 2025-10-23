@@ -25,12 +25,13 @@ interface Project {
 
 const categories = [
   "All",
-  "Web Development", 
-  "App Development", 
+  "Web Development",
+  "App Development",
   "Generative AI",
   "Dashboards",
   "Real-Time Apps",
-  "EdTech"
+  "EdTech",
+  "Frontend Development",
 ]
 
 export function ProjectsSection() {
@@ -48,17 +49,17 @@ export function ProjectsSection() {
         setLoading(true)
         const q = query(collection(db, "projects"), orderBy("createdAt", "desc"))
         const querySnapshot = await getDocs(q)
-        
+
         const loadedProjects: Project[] = querySnapshot.docs.map(doc => ({
           id: doc.id,
           ...doc.data()
         } as Project))
-        
+
         setProjects(loadedProjects)
       } catch (error) {
         console.error('Error loading projects:', error)
         // Fallback to default projects if Firebase fails
-       
+
       } finally {
         setLoading(false)
       }
@@ -69,11 +70,11 @@ export function ProjectsSection() {
 
   const filteredProjects =
     activeCategory === "All" ? projects : projects.filter((project) => project.category === activeCategory)
-  
+
   const displayedProjects = filteredProjects
   const hasMoreProjects = filteredProjects.length > 6
 
-  
+
 
   return (
     <section id="projects" className="py-24" ref={ref}>
@@ -86,15 +87,15 @@ export function ProjectsSection() {
           className="text-center space-y-4 mb-16"
         >
           <div className="inline-flex items-center px-3 py-1 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-medium">
-            Our Work
+            My Work
           </div>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-balance">
             Featured <span className="text-primary">Projects</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto text-pretty leading-relaxed">
-            Explore our portfolio of successful projects across various industries, showcasing our expertise in
-            delivering innovative solutions.
+            Explore my portfolio to see the projects I’ve built, showcasing my skills in crafting modern, scalable, and user-focused web applications.
           </p>
+
         </motion.div>
 
         {/* Category Filter */}
@@ -113,11 +114,10 @@ export function ProjectsSection() {
                 setActiveCategory(category)
                 setShowAll(false)
               }}
-              className={`transition-all duration-300 ${
-                activeCategory === category
+              className={`transition-all duration-300 ${activeCategory === category
                   ? "bg-primary text-primary-foreground"
                   : "hover:bg-primary/10 hover:text-primary hover:border-primary/30"
-              }`}
+                }`}
             >
               {category}
             </Button>
@@ -186,9 +186,9 @@ export function ProjectsSection() {
                       {/* Action Links */}
                       <div className="flex items-center gap-2 pt-2">
                         {project.link && (
-                          <Button 
-                            size="sm" 
-                            variant="outline" 
+                          <Button
+                            size="sm"
+                            variant="outline"
                             className="flex-1"
                             asChild
                           >
@@ -199,8 +199,8 @@ export function ProjectsSection() {
                           </Button>
                         )}
                         {project.github && (
-                          <Button 
-                            size="sm" 
+                          <Button
+                            size="sm"
                             variant="outline"
                             className="flex-1"
                             asChild
