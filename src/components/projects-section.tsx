@@ -28,9 +28,9 @@ const categories = [
   "Web Development",
   "App Development",
   "Generative AI",
-  "Dashboards",
-  "Real-Time Apps",
-  "EdTech",
+  // "Dashboards",
+  // "Real-Time Apps",
+  // "EdTech",
   "Frontend Development",
 ]
 
