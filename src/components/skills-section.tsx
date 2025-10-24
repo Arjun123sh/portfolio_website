@@ -74,7 +74,7 @@ const skillCategories = [
   {
     title: "Core Subjects",
     description: "Strong understanding of computer science fundamentals",
-    icon: BookOpen, 
+    icon: BookOpen,
     skills: [
       { name: "Data Structures & Algorithms (DSA)", icon: SiLeetcode, lightColor: "#FFA116", darkColor: "#FFA116" },
       { name: "Object Oriented Programming (OOPs)", icon: SiCplusplus, lightColor: "#00599C", darkColor: "#00599C" },
@@ -129,7 +129,7 @@ export function SkillsSection() {
       {/* Background Elements */}
       <div className="absolute top-20 left-20 w-64 h-64 bg-primary/5 rounded-full blur-3xl" />
       <div className="absolute bottom-20 right-20 w-80 h-80 bg-primary/5 rounded-full blur-3xl" />
-      
+
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
         {/* Header */}
         <motion.div
@@ -140,18 +140,19 @@ export function SkillsSection() {
         >
           <Badge variant="outline" className="border-primary/20 text-primary bg-primary/5 px-4 py-2">
             <Layers className="w-4 h-4 mr-2" />
-            Our Expertise
+            My Tech Stack
           </Badge>
-          
+
           <h2 className="text-3xl md:text-4xl lg:text-6xl font-bold text-balance leading-tight">
-            Technologies We <span className="text-primary">Master</span>
+            Technologies I <span className="text-primary">Work With</span>
           </h2>
-          
+
           <p className="text-xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">
-            Our team stays at the forefront of technology, continuously learning and mastering 
-            the latest tools and frameworks to deliver cutting-edge solutions that drive business success.
+            I'm passionate about building modern, scalable, and user-focused applications using the latest web technologies.
+            Here's a glimpse of the tools and frameworks I use to bring ideas to life.
           </p>
         </motion.div>
+
 
         {/* Skills Categories */}
         <motion.div
@@ -167,7 +168,7 @@ export function SkillsSection() {
                 <Card className="p-8 h-full bg-card/50 backdrop-blur-sm border-border/50 hover:border-primary/30 transition-all duration-500 group overflow-hidden relative">
                   {/* Consistent Background Gradient */}
                   <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-primary/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-                  
+
                   <CardContent className="p-0 relative z-10">
                     {/* Category Header */}
                     <div className="flex items-start space-x-4 mb-8">
@@ -192,8 +193,8 @@ export function SkillsSection() {
                           <motion.div
                             key={skill.name}
                             variants={skillVariants}
-                            whileHover={{ 
-                              scale: 1.05, 
+                            whileHover={{
+                              scale: 1.05,
                               y: -5,
                               transition: { duration: 0.2 }
                             }}
@@ -204,12 +205,12 @@ export function SkillsSection() {
                               <CardContent className="p-0 text-center space-y-3">
                                 <div className="flex justify-center">
                                   <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center group-hover/skill:bg-primary/20 group-hover/skill:scale-110 transition-all duration-300">
-                                    <SkillIcon 
-                                      className="w-6 h-6 transition-transform duration-300 dark:hidden" 
+                                    <SkillIcon
+                                      className="w-6 h-6 transition-transform duration-300 dark:hidden"
                                       style={{ color: skill.lightColor }}
                                     />
-                                    <SkillIcon 
-                                      className="w-6 h-6 transition-transform duration-300 hidden dark:block" 
+                                    <SkillIcon
+                                      className="w-6 h-6 transition-transform duration-300 hidden dark:block"
                                       style={{ color: skill.darkColor }}
                                     />
                                   </div>
